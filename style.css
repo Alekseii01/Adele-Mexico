@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  background: #000000;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  min-height: 880px;
+  text-align: center;
+  transition: height 0.5s ease-in-out, max-width 0.5s ease-in-out;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(1, 1, 1, 0.9)), url("assets/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top-adele {
+  max-width: 655px;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+
+.wrapper .content {
+  position: relative;
+  z-index: 1;
+}
+
+.font-upper {
+  font-family: "raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.9em;
+}
+
+.font {
+  font-family: "raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+}
+
+.font-copyright {
+  font-family: "raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f2a900;
+  font-size: 0.5em;
+}
+
+.font-title {
+  font-family: "raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f2a900;
+  font-size: 3em;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.title-links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.green {
+  color: #008409;
+}
+
+.white {
+  color: white;
+}
+
+.red {
+  color: rgb(185, 0, 0);
+}
+
+.adelelogo {
+  max-width: 120px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.title {
+  max-width: 300px;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.header__wrapper {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  width: 95%;
+  padding: 0 18px;
+  box-sizing: border-box;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img-adele {
+  max-width: 655px;
+  margin: 0 auto;
+}
+
+.text-title {
+    max-width: 300px;
+}
+
+.content-img {
+  position: relative;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.fa-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2a900;
+  font-size: 3em;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.content-img:hover .fa-play {
+  color: white;
+}
+
+.links {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  left: 0;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.content.low {
+  margin-top: 55px;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-list {
+  margin: 0 auto;
+  padding: 55px 0;
+}
+
+.list-item {
+  display: table;
+  margin: 0 auto;
+  font-size: 1.85em;
+}
+
+.media {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+.sotial-links {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.sotial-links li {
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+.font-copyright-links {
+  font-size: 0.5em;
+}
+
+.font-copyright-links a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.pipe {
+  color: #f2a900;
+  margin: 0 5px;
+}
+
+.sotial-links li a:hover {
+  color: #f2a900;
+  transition: all 0.2s;
+}
+
+.footer {
+  margin-top: 55px;
+  background: black;
+}
+
+.footer_wrapper {
+  padding: 15px;
+}
+
+.footer_wrapper > p {
+  margin: 0 auto;
+  display: table;
+  text-align: center;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 18px;
+  width: 280px;
+  color: #f2a900;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: #f2a900 1px solid;
+  overflow: hidden;
+  margin-left: 20px;
+  transition: margin-top 0.5s ease;
+}
+
+span {
+  display: inline-block;
+}
+
+button:hover {
+  background: white;
+  color: #f2a900;
+  transition: all 0.5s;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button a {
+  color: #f2a900;
+}
+
+a {
+  color: white;
+}
+
+@media (max-width: 603px) {
+  button {
+    margin-top: 10px;
+  }
+  .title {
+    max-width: 200px;
+  }
+  .font-title {
+    font-size: 1.5em;
+  }
+}

@@ -17,7 +17,7 @@ body {
   height: 100vh;
   min-height: 880px;
   text-align: center;
-  transition: height 0.5s ease-in-out, max-width 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .container {
@@ -34,11 +34,17 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  max-height: 770px;
   background: linear-gradient(transparent, rgba(1, 1, 1, 0.9)), url("assets/bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.5s ease-in-out;
 }
+
+.button {
+  margin-top: 30px;
+} 
 
 .top-adele {
   max-width: 655px;
@@ -82,7 +88,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -109,6 +115,12 @@ body {
   max-width: 300px;
   margin: 0 auto;
   transition: all 0.5s ease-in-out;
+}
+
+.sub-title {
+  margin-right: 44px;
+  align-items: center;
+display: flex;
 }
 
 .header__wrapper {
@@ -256,13 +268,12 @@ button {
   padding: 10px 20px;
   display: inline-block;
   font-size: 18px;
-  width: 280px;
+  width: fit-content;
   color: #f2a900;
   text-transform: uppercase;
   cursor: pointer;
   border: #f2a900 1px solid;
   overflow: hidden;
-  margin-left: 20px;
   transition: margin-top 0.5s ease;
 }
 
@@ -290,13 +301,45 @@ a {
   color: white;
 }
 
-@media (max-width: 603px) {
-  button {
-    margin-top: 10px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  .title {
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade_2 {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.3s;
+}
+
+.fade_3 {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.6s;
+}
+
+@media (max-width: 603px) {
+  .title, .text-title {
     max-width: 200px;
   }
+
+  .background {
+    max-height: 550px;
+  }
+
+  .wrapper {
+    min-height: 10px;
+  }
+
   .font-title {
     font-size: 1.5em;
   }

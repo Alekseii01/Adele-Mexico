@@ -266,7 +266,7 @@ img {
 button {
   background: transparent;
   border: none;
-  padding: 10px 40px;
+  padding: 10px 80px;
   display: inline-block;
   font-size: 1.5em;
   width: fit-content;
@@ -352,7 +352,6 @@ a {
   }
 
   button {
-    padding: 10px 110px;
-    font-size: 1.5em;
+    padding: 10px 120px;
   }
 }

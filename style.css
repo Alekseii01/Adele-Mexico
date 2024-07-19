@@ -78,7 +78,7 @@ body {
 .font-title {
   font-family: "raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f2a900;
-  font-size: 5.5em;
+  font-size: 4.7em;
   letter-spacing: 18px; 
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
@@ -113,7 +113,7 @@ body {
 }
 
 .title {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   transition: all 0.5s ease-in-out;
 }
@@ -349,9 +349,5 @@ a {
   .title-links {
     flex-direction: column;
     align-items: center;
-  }
-
-  button {
-    padding: 10px 120px;
   }
 }

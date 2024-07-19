@@ -34,7 +34,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  max-height: 770px;
+  max-height: 1200px;
   background: linear-gradient(transparent, rgba(1, 1, 1, 0.9)), url("assets/bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,10 +78,11 @@ body {
 .font-title {
   font-family: "raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f2a900;
-  font-size: 3em;
-  letter-spacing: 7px;
+  font-size: 5.5em;
+  letter-spacing: 18px; 
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
+  margin-left: 40px;
 }
 
 .title-links {
@@ -112,7 +113,7 @@ body {
 }
 
 .title {
-  max-width: 300px;
+  max-width: 600px;
   margin: 0 auto;
   transition: all 0.5s ease-in-out;
 }
@@ -265,16 +266,16 @@ img {
 button {
   background: transparent;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 40px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.5em;
   width: fit-content;
   color: #f2a900;
   text-transform: uppercase;
   cursor: pointer;
   border: #f2a900 1px solid;
   overflow: hidden;
-  transition: margin-top 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 span {
@@ -327,20 +328,31 @@ a {
   animation-delay: 0.6s;
 }
 
-@media (max-width: 603px) {
+@media (max-width: 800px) {
   .title, .text-title {
-    max-width: 200px;
+    max-width: 400px;
   }
 
   .background {
-    max-height: 550px;
+    max-height: 850px;
   }
 
   .wrapper {
     min-height: 10px;
+    height: 77vh;
   }
 
   .font-title {
+    font-size: 3em;
+  }
+
+  .title-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    padding: 10px 110px;
     font-size: 1.5em;
   }
 }
